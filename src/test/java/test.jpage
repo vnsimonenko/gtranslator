@@ -1,0 +1,14 @@
+String expression = "wasn_t_1_gb";
+String source = "";
+java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("^([^0-9]*)[_0-9]*_gb[_0-9]*");
+java.util.regex.Matcher matcher = pattern.matcher(expression);
+if (matcher.find()) {
+	source = matcher.group(1);
+	while (source.endsWith("_")) {
+		source = source.substring(0, source.length() - 1);
+	}
+}
+return source.replace("_", "'");
+
+
+

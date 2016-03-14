@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "The phrase",
+      "type": "string"
+    },
+    "lang": {
+      "description": "Name of the product",
+      "enum": [ "EN", "RU", "UA"]
+    },
+    "transcriptions": {
+      "type": "object",
+      "patternProperties": {
+        "^AM$|^BR$": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "translations": {
+      "type": "object",
+      "patternProperties": {
+        "^RU$|^EN$|^UA$": {
+          "type": "object",
+          "patternProperties": {
+            "^UNKNOW$|^NOUN$|^ADJECTIVE$|^VERB$|^PRONOUN$|^NUMERAL$|^ADVERB$|^PREPOSITION$|^CONJUNCTION$|^PARTICLE$|^ARTICLE$|^PARTICIPLE$|^GERUND$": {
+              "type": "object",
+              "patternProperties": {
+                "^[\\D']*$": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "source",
+    "lang"
+  ]
+}

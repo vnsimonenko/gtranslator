@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" ?>
+<root:document
+        xmlns:root="http://apache.org/root"
+        xmlns:translation="http://apache.org/translation">
+    <translation:element>
+        {
+        "source": "test",
+        "lang": "EN",
+        "transcriptions": {
+        "AM": [
+        "trans2",
+        "trans1"
+        ],
+        "BR": [
+        "trans9",
+        "trans7"
+        ]
+        },
+        "translations": {
+        "EN": {
+        "cat2_en": {
+        "test22": 11,
+        "test11": 22
+        },
+        "cat1_en": {
+        "test32": 11,
+        "test41": 22
+        }
+        },
+        "RU": {
+        "cat2": {
+        "test12": 21,
+        "test11": 22
+        }
+        }
+        },
+        "original_translations": {
+        "EN": "{\"test\":100}"
+        }
+        }
+    </translation:element>
+</root:document>

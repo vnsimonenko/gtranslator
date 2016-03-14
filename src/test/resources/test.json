@@ -1,0 +1,13 @@
+{
+  "translations": {
+    "RU": {
+      "NOUN": {
+        "test": 0.5,
+        "тест": 1
+      }
+    }
+  },
+  "original_translations": {
+    "UA": "{\"source\":\"test\",\"lang\":\"EN\",\"transcriptions\":{\"AM\":[\"test\",\"1\"]},\"translations\":{\"RU\":{\"NOUN\":{\"тест\":1.0,\"контроль\":0.5}}}}"
+  }
+}

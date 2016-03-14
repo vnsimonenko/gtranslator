@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru-UA">
+<head>
+</head>
+<body>
+<div align="center" style="width: 100%;font-size:14px">
+<table width="200px"><tr><td>
+<b>From:</b><br>
+    <input id="en1" type="radio" name="browser1" value="en"><img src="resource:/client/images/br.png" width="20px" height="20px"><br>
+    <input id="ru1" type="radio" name="browser1" value="ru"><img src="resource:/client/images/ru.png" width="20px" height="20px"><br>
+    <input id="ua1" type="radio" name="browser1" value="ua"><img src="resource:/client/images/ua.png" width="20px" height="20px"><br>
+</td><td>
+<b>To:</b><br>
+    <input id="en2" type="radio" name="browser2" value="en"><img src="resource:/client/images/br.png" width="20px" height="20px"><br>
+    <input id="ru2" type="radio" name="browser2" value="ru"><img src="resource:/client/images/ru.png" width="20px" height="20px"><br>
+    <input id="ua2" type="radio" name="browser2" value="ua"><img src="resource:/client/images/ua.png" width="20px" height="20px"><br>
+</td></tr>
+<tr>
+    <td colspan="2">
+        <br>
+        <input type="text" id="amountwords">
+        <br>
+        <input id="amountwords_but" type="button" value="amount words">
+    </td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><br><b>Mode</b></td>
+</tr>
+<tr>
+    <td><input id="copyid" type="radio" name="mode" value="copy">Copy<br></td>
+    <td><input id="selectid" type="radio" name="mode" value="select">Select<br></td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><br><b>Access</b></td>
+</tr>
+<tr>
+    <td colspan="2"><input id="enabledid" type="checkbox">Is the app enabled?<br></td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><br><b>Auto play</b></td>
+</tr>
+<tr>
+    <td><input id="playamid" type="checkbox" value="AM_AUTO_PLAY">Am<br></td>
+    <td><input id="playbrid" type="checkbox" value="BR_AUTO_PLAY">Br<br></td>
+</tr>
+</table>
+</div>
+<br>
+<div align="center" style="width: 100%">
+<p><a href="about:blank" onclick="app.exit()">Exit</a></p>
+</div>
+</body>
+</html>
